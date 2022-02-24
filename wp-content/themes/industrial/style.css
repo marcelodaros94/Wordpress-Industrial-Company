@@ -115,6 +115,7 @@ section{
 }
 #clientes img{
     height: 50px;
+    width:auto;
     margin:25px auto;
 }
 #competencias{

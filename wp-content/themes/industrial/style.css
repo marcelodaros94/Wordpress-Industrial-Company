@@ -14,6 +14,12 @@ Text Domain: industrial
     --alt: #e39b22; 
     --sec: #003862;
 }
+body{
+    padding-top:70px;
+}
+a{
+ color:var(--main)   ;
+}
 .navbar-brand, .navbar-brand small{
     font-family: 'Spectral', serif;
     font-weight: 700;
@@ -77,6 +83,7 @@ section{
 .topbar {
     background: white;
     z-index: 2;
+    top:0;
     position: fixed;
     right: 0;
     display: flex;
@@ -137,4 +144,7 @@ footer{
     display:flex;
     align-items:center;
     justify-content:center;
+}
+h1.entry-title {
+    margin-bottom: 35px;
 }

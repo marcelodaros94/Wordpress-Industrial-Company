@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <?php wp_head() ?>
     </head>
-    <body>
+    <body <?php body_class() ?>>
         <div class="topbar">
             <div class="topbar__line"></div>
             <div class="topbar__cont">Télf.: (51-1) 637 5871 / 637 5872</div>

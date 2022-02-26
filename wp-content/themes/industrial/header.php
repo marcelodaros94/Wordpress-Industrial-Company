@@ -36,13 +36,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav text-right">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio <!--<span class="sr-only">(current)</span>--></a>
+                        <a class="nav-link" href="<?php echo get_bloginfo('url'); ?>">Inicio <!--<span class="sr-only">(current)</span>--></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
+                        <a class="nav-link" href="<?php echo get_bloginfo('url'); ?>/representadas">Catálogo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="<?php echo get_bloginfo('url'); ?>/blog">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contacto</a>

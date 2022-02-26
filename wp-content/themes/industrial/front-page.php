@@ -1,4 +1,4 @@
-<?php get_header();echo "Index"; ?>
+<?php get_header(); ?>
         <main>
             <div class="main-slider">
                 <div class="main-slide" style="background: linear-gradient(to left, rgba(255, 255, 255, 0), black), url(<?php bloginfo('template_url') ?>/img/ejbanner1.jpg) center center no-repeat;">                    

@@ -1,4 +1,4 @@
-<?php get_header();echo "Index"; ?>
+<?php get_header(); ?>
         <main>
             <div class="main-slider">
                 <div class="main-slide" style="background: linear-gradient(to left, rgba(255, 255, 255, 0), black), url(<?php bloginfo('template_url') ?>/img/ejbanner1.jpg) center center no-repeat;">                    
@@ -8,13 +8,7 @@
                             <p>Nuestras representadas son marcas de reconocido prestigio, son fabricantes con amplia experiencia, por ello proponemos productos de alta confiabilidad y garantía comprobada.</p>
                         </div>
                     </div>
-                </div><!--
-                <div class="main-slide" style="background: linear-gradient(to left, rgba(255, 255, 255, 0), black), url(img/ejbanner2.jpg) center center no-repeat;">
-                    <div class="main-slide__cont">
-                        <h2></h2>
-                        <p>Nuestras representadas son marcas de reconocido prestigio, son fabricantes con amplia experiencia, por ello proponemos productos de alta confiabilidad y garantía comprobada.</p>
-                    </div>
-                </div>-->
+                </div>
             </div>
         </main>
         
@@ -37,7 +31,35 @@
                     <?php
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <div class="clientes-slide">
-                        <?php echo get_the_post_thumbnail($loop->ID, 'industrial-thumbnail-avatar'); ?>
+                        <?php echo get_the_post_thumbnail($loop->ID); ?>
+                    </div>
+                    <?php
+                        endwhile;
+                    ?> 
+                </div>
+            </div>
+        </section>
+        <?php
+            }
+            $args=array(
+                'post_type' => 'representadas',
+                'posts_per_page' => 6,
+                'orderby' => 'publish_date',
+                'order' => 'ASC'
+            );
+            $loop=new WP_Query($args);
+            if($loop->have_posts()){ 
+        ?>
+        <section id="representadas">
+            <div class="section-cont">
+                <h2>
+                    Nuestras representadas
+                </h2>
+                <div class="representadas-slider gap-25">                                       
+                    <?php
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                    <div class="representadas-slide">  
+                        <?php echo get_the_post_thumbnail($loop->ID); ?>
                     </div>
                     <?php
                         endwhile;

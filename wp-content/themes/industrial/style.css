@@ -120,11 +120,24 @@ section{
     padding: 15px 25px;
     max-width: 95%;
 }
-#clientes img{
-    height: 50px;
-    width:auto;
-    margin:25px auto;
+#clientes img, .representadas-slider img{
+    margin: 25px auto;
+    max-width: 120px;
 }
+#clientes .slick-track{
+    display:flex;
+    align-items: center;
+}
+.representadas-slider .slick-track {
+    display: flex !important;
+    align-items: stretch;
+}.representadas-slider .slick-slide {
+    height: auto !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.representadas-slider .slick-slide { height: inherit !important; }
 #competencias{
     background:var(--main);
 }
@@ -147,4 +160,12 @@ footer{
 }
 h1.entry-title {
     margin-bottom: 35px;
+}ul.page-numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}ul.page-numbers li {
+    list-style: none;
 }

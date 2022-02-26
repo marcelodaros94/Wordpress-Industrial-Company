@@ -25,12 +25,21 @@
                 });
                 $('.clientes-slider').slick({
                     dots: false,
-                    infinite: false,
-                    speed: 300,
-                    slidesToShow: 2,
-                    arrows: false
-                   /* autoplay: true,
-                    autoplaySpeed: 4000*/
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 3,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 2000
+                });
+                $('.representadas-slider').slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 4,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 2000
                 });
                 $('.competencias-slider').slick({
                     dots: false,

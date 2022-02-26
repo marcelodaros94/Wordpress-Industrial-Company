@@ -37,4 +37,6 @@ function my_meta_box_details () {
   $post_ID = $post->ID; 
   printf( "<iframe frameborder='0' src=' %s ' style='width: 100%%; height: 400px;'> </iframe>", get_upload_iframe_src('media') );
 }
+
+
 ?>

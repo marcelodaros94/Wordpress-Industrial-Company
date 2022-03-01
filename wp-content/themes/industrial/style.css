@@ -188,64 +188,146 @@ h1.entry-title {
     list-style: none;
 }
 
-        /*slider custom animation*/  
-        .main-image{
-            width: 100%;
-            -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
-            transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
-            -webkit-transform: scale(1.2); transform: scale(1.2);
-        }
-        main {
-            position: relative;
-            z-index: 1;
-            height: calc(100vh - 90px);
-            overflow: hidden;
-            margin: 0px auto;
-          }
-          main * {
-            outline: none;
-          }
-          main .main-slider {
-            box-shadow: 0 20px 50px -25px black;
-          }
-          main .slider-track {/*
-            -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
-            transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);*/
-          }
-          main .main-slide {
-            position: relative;
-            z-index: 1;
-          }
-          main .main-slide img {
-            width: 100vw !important;
-            -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
-            transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
-            -webkit-transform: scale(1.3);
-                    transform: scale(1.3);
-          }
-          main .main-slide.slick-active img {
-            width:100vw !important;
-            -webkit-transform: scale(1);
-                    transform: scale(1);
-            -webkit-animation: cssAnimation 8s 1 ease-in-out forwards;
-            animation: cssAnimation 8s 1 ease-in-out forwards;
-          }
-          
-          @keyframes cssAnimation {
-            from {
-              -webkit-transform: scale(1) translate(0px);
-            }
-            to {
-              -webkit-transform: scale(1.3) translate(0px);
-            }
-        }
-        @-webkit-keyframes cssAnimation {
-          from {
-            -webkit-transform: scale(1) translate(0px);
-          }
-          to {
-            -webkit-transform: scale(1.3) translate(0px);
-          }
-        }
-        .main-slider .section-cont{ position: absolute;z-index:3;left:0;right:0;top:0;bottom:0;display:flex;align-items:flex-start; }
-        .main-slider .slick-dots{display:none !important;}
+/*slider custom animation*/  
+.main-image{
+    width: 100%;
+    -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    -webkit-transform: scale(1.2); transform: scale(1.2);
+}
+main {
+    position: relative;
+    z-index: 1;
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    margin: 0px auto;
+    }
+    main * {
+    outline: none;
+    }
+    main .main-slider {
+    box-shadow: 0 20px 50px -25px black;
+    }
+    main .slider-track {/*
+    -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);*/
+    }
+    main .main-slide {
+    position: relative;
+    z-index: 1;
+    }
+    main .main-slide img {
+    width: 100vw !important;
+    -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    }
+    main .main-slide.slick-active img {
+    width:100vw !important;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation: cssAnimation 8s 1 ease-in-out forwards;
+    animation: cssAnimation 8s 1 ease-in-out forwards;
+    }
+    
+    @keyframes cssAnimation {
+    from {
+        -webkit-transform: scale(1) translate(0px);
+    }
+    to {
+        -webkit-transform: scale(1.3) translate(0px);
+    }
+}
+@-webkit-keyframes cssAnimation {
+    from {
+    -webkit-transform: scale(1) translate(0px);
+    }
+    to {
+    -webkit-transform: scale(1.3) translate(0px);
+    }
+}
+.main-slider .section-cont{ position: absolute;z-index:3;left:0;right:0;top:0;bottom:0;display:flex;align-items:flex-start; }
+.main-slider .slick-dots{display:none !important;}
+
+/***swiper slider***/
+.swiper .image{
+	width:100%;height:100%;object-fit:cover;margin:0 auto;object-position:70% 50%;
+}
+/* |------------------------------------------------------ | CSS: Swiper |------------------------------------------------------ */
+body.open-card {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.swiper .slide-inner {
+    height: 100%;
+}
+.swiper-container {
+    padding: 80px 0;
+}
+.swiper-slide {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 450px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    background: #fff;
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+}
+.swiper-slide.swiper-slide-active {
+    z-index: 3;
+}
+.swiper-slide.swiper-slide-prev {
+    z-index: 1;
+}
+.swiper-slide.swiper-slide-next {
+    z-index: 1;
+}
+/* |------------------------------------------------------ | CSS: Cards with Fullscreen zoom |------------------------------------------------------ */
+.swiper.page-container {
+    overflow: hidden;
+}
+.swiper .page {
+    visibility: hidden;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}

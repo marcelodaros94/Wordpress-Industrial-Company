@@ -5,7 +5,9 @@
 
 get_header(); ?>
 
-<div class="col-md-12">
+<div class="section-cont">  
+  <h1>Nuestras Representadas</h1>
+  <br>
             <?php            
               $current=get_query_var('paged') ? get_query_var('paged'): 1;
               $pagination=new WP_Query(array(
@@ -35,7 +37,7 @@ get_header(); ?>
 
                       <div class="entry-content">
                         <?php the_excerpt(); ?>
-                        <a href="<?php echo get_permalink(); ?>"> <?php _e('Seguir leyendo', 'industrial'); ?> </a>
+                        <a href="<?php echo get_permalink(); ?>"> <?php _e('Conoce más', 'industrial'); ?> </a>
                       </div>
                     </div>
                   </article>

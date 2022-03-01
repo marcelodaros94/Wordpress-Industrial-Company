@@ -13,15 +13,18 @@
             new WOW().init();        
             // counter up effect
             
-            document.addEventListener("DOMContentLoaded", function(event) {
+            document.addEventListener("DOMContentLoaded", function(event) {  
                 $('.main-slider').slick({
-                    dots: false,
+                    draggable: true,
+                    autoplay: true,
+                    autoplaySpeed: 7000,
+                    arrows: false,
+                    dots: true,
+                    fade: true,
+                    speed: 500,
                     infinite: true,
-                    speed: 300,
-                    slidesToShow: 1,
-                    arrows: false
-                   /* autoplay: true,
-                    autoplaySpeed: 4000*/
+                    cssEase: 'ease-in-out',
+                    touchThreshold: 100
                 });
                 $('.clientes-slider').slick({
                     dots: false,

@@ -39,7 +39,7 @@
                         <a class="nav-link" href="<?php echo get_bloginfo('url'); ?>">Inicio <!--<span class="sr-only">(current)</span>--></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo get_bloginfo('url'); ?>/representadas">Catálogo</a>
+                        <a class="nav-link" href="<?php echo get_bloginfo('url'); ?>/representadas">Portafolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo get_bloginfo('url'); ?>/blog">Blog</a>

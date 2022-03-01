@@ -12,25 +12,19 @@ get_header(); ?>
             <h1 class="entry-title">
               <strong><?php _e('Categoría:', 'industrial'); ?></strong> <?php single_cat_title(); ?>
             </h1>
-          <?php } ?>
-
-          <?php // http://www.example.com/tag/custom-tag
+          <?php }  // http://www.example.com/tag/custom-tag
           if (is_tag()) { ?>
             <h1 class="entry-title">
               <strong><?php _e('Etiqueta:', 'industrial'); ?></strong> <?php single_tag_title(); ?></h1>
-          <?php } ?>
-
-          <?php // http://www.example.com/tag/custom-tag
-          if (is_author()) { 
+          <?php }  // http://www.example.com/tag/custom-tag
+          else if (is_author()) { 
             $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
             ?>
             <h1 class="entry-title">
               <strong><?php _e('Etiqueta:', 'industrial'); ?></strong> <?php $curauth->user_nicename; ?>
             </h1>
-          <?php } ?>
-
-          <?php // http://www.example.com/2017/05
-          if (is_date()) { ?>
+          <?php }  // http://www.example.com/2017/05
+          else if (is_date()) { ?>
             <h1 class="entry-title">
               <strong><?php _e('Entradas del ', 'industrial'); ?></strong>
               <?php 
@@ -44,7 +38,7 @@ get_header(); ?>
               if ($day > 0) { echo '-' . str_pad($day, 2, 0, STR_PAD_LEFT); }
 
             ?></h1>
-          <?php } ?>
+          <?php }        ?>
 
           <div class="col-md-12">
             <?php            

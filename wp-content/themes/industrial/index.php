@@ -73,14 +73,16 @@
         <section id="competencias">
             <div class="section-cont">
                 <h2>Por qué confiar en nosotros</h2>
-                <div class="competencias-slider gap-25">
-                    <div class="competencias-slide">
-                        <h3>Calidad</h3>
-                        <p>Como profesionales de vocación tenemos un compromiso</p>
+                <div class="competencias-slider gap-25"> 
+                    <div class="competencias-slide"><h3>
+                    REPRESENTANTES EXCLUSIVOS</h3>
+                    <p>Marcas reconocidas a nivel mundial, por sus productos de alto nivel tecnológico, comprobada garantía técnica y confiabilidad.</p>
                     </div>
-                    <div class="competencias-slide">
-                        <h3>Pasión</h3>
-                        <p>Por ello sabemos en todo momento lo que necesitas.</p>
+                    <div class="competencias-slide"><h3>CERTIFICACIÓN ISO</h3><p>
+                    Equipos operando en las redes eléctricas de muchos países alrededor del mundo a plena satisfacción de los clientes usuarios.</p>
+                    </div>
+                    <div class="competencias-slide"><h3>SERVICIO PERSONALIZADO</h3><p>
+                    Atención de excelencia y calidad profesional solucionando los problemas que pudieran tener nuestros clientes en sus proyectos.</p>
                     </div>
                 </div>
             </div>

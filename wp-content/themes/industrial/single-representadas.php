@@ -22,6 +22,18 @@ get_header(); ?>
                   <div class="entry-content">
                     <?php the_content(); ?>
                   </div>
+                  <div class="tab-certificate">
+                    <a href="<?php pdf_file_url(); ?>" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-certificate" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round" style="
+">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="15" cy="15" r="3"></circle>
+                    <path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5"></path>
+                    <path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73"></path>
+                    <line x1="6" y1="9" x2="18" y2="9"></line>
+                    <line x1="6" y1="12" x2="9" y2="12"></line>
+                    <line x1="6" y1="15" x2="8" y2="15"></line>
+                    </svg> Ver Certificado ISO</a>
+                  </div>
                   <div class="swiper-container swiper">
                     <div class="swiper-wrapper">
                       <?php

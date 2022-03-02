@@ -14,7 +14,7 @@
                         <img class="main-image" src="<?php bloginfo('template_url') ?>/img/transportador-arteche.jpg">                        
                         
                     </div>
-                </div>
+                </div><!--
                 <div class="main-slide"> 
                         <div class="section-cont">
                             <div class="main-slide__cont">
@@ -29,7 +29,7 @@
                         <img class="main-image" src="<?php bloginfo('template_url') ?>/img/ejbanner1.jpg">                   
                         
                     </div>
-                </div>
+                </div>-->
             </div>
         </main>        
         <?php

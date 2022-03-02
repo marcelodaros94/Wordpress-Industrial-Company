@@ -24,7 +24,15 @@
                     speed: 500,
                     infinite: true,
                     cssEase: 'ease-in-out',
-                    touchThreshold: 100
+                    touchThreshold: 100,
+                    responsive: [
+                        {
+                            breakpoint: 800,
+                            settings: {
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
                 });
                 $('.clientes-slider').slick({
                     dots: false,
@@ -33,7 +41,15 @@
                     slidesToShow: 3,
                     arrows: false,
                     autoplay: true,
-                    autoplaySpeed: 2000
+                    autoplaySpeed: 2000,
+                    responsive: [
+                        {
+                            breakpoint: 800,
+                            settings: {
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
                 });
                 $('.representadas-slider').slick({
                     dots: false,
@@ -42,16 +58,32 @@
                     slidesToShow: 4,
                     arrows: false,
                     autoplay: true,
-                    autoplaySpeed: 2000
+                    autoplaySpeed: 2000,
+                    responsive: [
+                        {
+                            breakpoint: 800,
+                            settings: {
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
                 });
                 $('.competencias-slider').slick({
                     dots: false,
                     infinite: false,
                     speed: 300,
                     slidesToShow: 3,
-                    arrows: false
-                   /* autoplay: true,
-                    autoplaySpeed: 4000*/
+                    arrows: false,
+                    responsive: [
+                        {
+                            breakpoint: 800,
+                            settings: {
+                                slidesToShow: 1,autoplay: true,
+                                autoplaySpeed: 4000
+                            }
+                        }
+                    ]
+                   /* */
                 });
                 /*$(".counter__number").counterUp({
                     delay: 150,
